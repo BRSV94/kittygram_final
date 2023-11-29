@@ -17,7 +17,7 @@ services:
     env_file: .env
     volumes:
       - static:/backend_static
-      - media:/media/pictures
+      - media:/media/
   frontend:
     image: brsv94/kittygram_frontend
     command: cp -r /app/build/. /frontend_static/
@@ -27,6 +27,6 @@ services:
     image: brsv94/kittygram_gateway
     volumes:
       - static:/staticfiles/
-      - media:/media/pictures
+      - media:/media/
     ports:
       - 9000:80
