@@ -27,6 +27,6 @@ services:
     image: brsv94/kittygram_gateway
     volumes:
       - static:/staticfiles/
-      - media:/media/
+      - media:/media/cats/images/
     ports:
       - 9000:80
